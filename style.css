@@ -4,7 +4,7 @@
     --color-white: #fff;
     --color-light: #f4f4f4;
     --color-dark: #525252;
-    --color-black: #141415;
+    --color-black: #131313;
     --color-night: #1c1c1d;
     --color-primary: #f23e1e;
     --color-light-orange: #d75139;
@@ -12,6 +12,13 @@
     --color-primary-fade: rgba(240, 165, 142, 0.12);
     --color-success: #29f5a6;
     --color-warning: #ffce31;
+    --color-matte-black: #191919;
+    --color-brown: #654321;
+    --color-golden-brown: #E69720;
+    --color-light-brown: #A66D17;
+    --color-gray: #b7b2b2;
+    --color-dark-gray: #616161;
+    --color-darker: #363535;
     --transition: all 300ms ease;
 }
 
@@ -27,11 +34,11 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: var(--color-primary-light);
+    background: var(--color-black);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
+    background: var(--color-light-brown);
 }
 
 html {
@@ -40,9 +47,9 @@ html {
 }
 
 body {
-    background: var(--color-light);
+    background: var(--color-matte-black);
     font-family: 'Montserrat', sans-serif;
-    color: var(--color-dark);
+    color: var(--color-dark-gray);
     max-width: 100vw;
 }
 
@@ -52,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--color-black);
+    color: var(--color-gray);
     line-height: 1.2;
 }
 
@@ -108,37 +115,37 @@ img {
 .btn {
     padding: 1.4rem 3.4rem;
     font-size: 1.1rem;
-    color: var(--color-black);
-    background: var(--color-white);
+    color: var(--color-golden-brown);
+    background: var(--color-matte-black);
     display: inline-block;
     margin: 2rem 0;
     transition: var(--transition);
 }
 
 .btn:hover {
-    box-shadow: 0 2rem var(--color-primary-light);
+    box-shadow: 0 2rem var(--color-golden-brown);
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-white);
+    background: var(--color-golden-brown);
+    color: var(--color-matte-black);
 }
 
 
 /* ====================== NAVBAR =================== */
 
 nav {
-    background: coral;
+    background: var(--color-golden-brown);
     width: 100%;
     height: 5rem;
-    background: var(--color-white);
+    background: var(--color-matte-black);
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 0;
     z-index: 2;
-    border-bottom: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light-brown);
 }
 
 nav .container {
@@ -153,7 +160,7 @@ nav button {
 }
 
 nav h3 {
-    color: var(--color-primary);
+    color: var(--color-gray);
 }
 
 nav .container ul {
@@ -167,18 +174,13 @@ nav .container ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-black);
+    color: var(--color-gray);
     position: relative;
     transition: var(--transition);
 }
 
 nav .container ul li a:hover {
-    color: var(--color-primary);
-}
-
-nav .container ul li a.active {
-    background: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-golden-brown);
 }
 
 
@@ -206,12 +208,12 @@ section.landing .socials {
 }
 
 section.landing .socials a {
-    font-size: 1.1rem;
-    background: var(--color-light);
-    color: var(--color-dark);
-    padding: 0.3rem;
+    font-size: 1.3rem;
+    background: var(--color-matte-black);
+    color: var(--color-dark-gray);
+    padding: 1.5rem;
     border-radius: 50%;
-    height: 2rem;
+    height: 3rem;
     width: 2rem;
     display: flex;
     justify-content: center;
@@ -220,7 +222,7 @@ section.landing .socials a {
 }
 
 section.landing .socials a:hover {
-    background: var(--color-primary);
+    background: var(--color-golden-brown);
     color: var(--color-white);
 }
 
@@ -230,7 +232,7 @@ section.landing .info h1 {
 }
 
 section.landing h3 {
-    margin: 2.4rem 0 1rem;
+    margin: 2.4rem 0 2.2rem;
 }
 
 section.landing .info p {
@@ -246,7 +248,7 @@ section.landing .profile-area {
 section.landing .profile-area .outer-circle {
     width: 26rem;
     height: 26rem;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-dark-gray);
     border-radius: 50%;
     position: relative;
     animation: move 30s linear infinite;
@@ -267,12 +269,12 @@ section.landing .profile-area .outer-circle span {
     height: 4rem;
     border-radius: 50%;
     position: absolute;
-    background: var(--color-light);
-    color: var(--color-primary);
+    background: var(--color-matte-black);
+    color: var(--color-light-brown);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary-light);
+    box-shadow: 0 0 1rem var(--color-darker);
 }
 
 section.landing .profile-area .outer-circle span:nth-child(1) {
@@ -329,13 +331,17 @@ section.landing .profile-area .inner-circle {
 /* ========================= ABOUT SECTION ======================*/
 
 section.about {
-    background: var(--color-light);
+    background: var(--color-matte-black);
 }
 
 section.about .container {
     display: grid;
     grid-template-columns: 28rem auto;
     gap: 5rem;
+}
+
+section.about .container .info {
+    color: var(--color-gray);
 }
 
 section.about p {
@@ -375,7 +381,7 @@ section.recent-work .projects .project .action {
 }
 
 section.recent-work .projects .project .action a {
-    color: var(--color-primary);
+    color: var(--color-golden-brown);
 }
 
 section.recent-work .projects .project .action a:hover {
@@ -416,21 +422,21 @@ footer .container .socials {
 }
 
 footer .container .socials a {
-    background: var(--color-light);
-    color: var(--color-dark);
+    background: var(--color-matte-black);
+    color: var(--color-light-brown);
     padding: 0.5rem;
     border-radius: 50%;
     transition: var(--transition);
 }
 
 footer .container .socials a:hover {
-    background: var(--color-primary);
+    background: var(--color-golden-brown);
     color: var(--color-white);
 }
 
 footer .copyright {
-    background: var(--color-light);
-    color: var(--color-black);
+    background: var(--color-matte-black);
+    color: var(--color-light-brown);
     text-align: center;
     margin-top: -0rem;
     padding: 2rem 0;
@@ -477,8 +483,8 @@ footer .copyright {
         z-index: 3;
         width: 16rem;
         height: 100vh;
-        background: var(--color-white);
-        box-shadow: 1rem 0 2rem var(--color-primary-light);
+        background: var(--color-matte-black);
+        box-shadow: 1rem 0 2rem var(--color-matte-black);
         display: none;
     }
     nav ul li {
