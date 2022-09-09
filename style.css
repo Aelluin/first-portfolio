@@ -5,7 +5,9 @@
     --color-light: #f4f4f4;
     --color-dark: #525252;
     --color-black: #141415;
+    --color-night: #1c1c1d;
     --color-primary: #f23e1e;
+    --color-light-orange: #d75139;
     --color-primary-light: hsl(14, 89%, 53%, 12%);
     --color-primary-fade: rgba(240, 165, 142, 0.12);
     --color-success: #29f5a6;
@@ -21,6 +23,15 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-primary-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
 }
 
 html {
