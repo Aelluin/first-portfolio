@@ -424,7 +424,7 @@ footer .container .socials {
 footer .container .socials a {
     background: var(--color-matte-black);
     color: var(--color-dark-gray);
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 50%;
     transition: var(--transition);
 }
