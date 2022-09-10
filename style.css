@@ -423,8 +423,8 @@ footer .container .socials {
 
 footer .container .socials a {
     background: var(--color-matte-black);
-    color: var(--color-light-brown);
-    padding: 0.5rem;
+    color: var(--color-dark-gray);
+    padding: 1rem;
     border-radius: 50%;
     transition: var(--transition);
 }
